@@ -4,11 +4,11 @@ function getFormvalue() {
   const firstName = form.elements['fname'].value.trim();
   const lastName = form.elements['lname'].value.trim();
 
-  if (firstName === '' || lastName === '') {
-    alert('Please enter both first and last names.');
-  } else {
+  // if (firstName === '' || lastName === '') {
+  //   alert('Please enter both first and last names.');
+  // } else {
     alert(firstName + " " + lastName);
-  }
+  // }
 
 }
 document.getElementById('userForm').addEventListener('submit', function(event) {
