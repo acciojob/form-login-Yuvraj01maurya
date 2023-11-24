@@ -7,7 +7,7 @@ function getFormvalue() {
   if (firstName === '' || lastName === '') {
     alert('Please enter both first and last names.');
   } else {
-    alert('First Name: ' + firstName + '\nLast Name: ' + lastName);
+    alert(firstName + " " + lastName);
   }
 
 }
