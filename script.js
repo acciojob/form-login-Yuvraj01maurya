@@ -1,14 +1,16 @@
 function getFormvalue() {
     //Write your code here
   const form = document.getElementById('form1');
-  const firstName = form.elements['fname'].value.trim();
-  const lastName = form.elements['lname'].value.trim();
+  function getFormvalue() {
+     var x=document.getElementById("form1");
+     let name = ""
+     for (var i=0;i<x.length;i++) {
+     if (x.elements[i].value!='Submit')
+         name += x.elements[i].value + " "
+     }
 
-  // if (firstName === '' || lastName === '') {
-  //   alert('Please enter both first and last names.');
-  // } else {
-    alert(firstName + " " + lastName);
-  // }
+     alert(name.substring(0,name.length-1));
+  }
 
 }
 document.getElementById('userForm').addEventListener('submit', function(event) {
