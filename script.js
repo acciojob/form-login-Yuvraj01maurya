@@ -1,15 +1,9 @@
+// const form = document.getElementById( "form1");
+
 function getFormvalue() {
     //Write your code here
-   var x=document.getElementById("form1");
-   let name = ""
-   for (var i=0;i<x.length;i++) {
-   if (x.elements[i].value!='Submit')
-      name += x.elements[i].value + " "
-   }
-
-alert(name.substring(0,name.length-1));
+	const form = document.getElementById( "form1");
+	const fname = form.fname.value;
+	const lname = form.lname.value;
+	alert(fname+" "+lname);
 }
-document.getElementById('userForm').addEventListener('submit', function(event) {
-  event.preventDefault(); // Prevents the default form submission
-  getFormvalue();
-});
